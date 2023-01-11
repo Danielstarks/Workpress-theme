@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
@@ -31,8 +31,8 @@
                     <a class="nav-branding" href="#"><img src="img/logo.png" alt="logo"></a>
 
                     <ul class="nav-menu">
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                        <li class="nav-item"><a href="./index.php class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./sobre.php" class="nav-link">Serviços</a></li>
                         <li class="nav-item"><a href="#contatc" class="nav-link">Contatos</a></li>
                         <li class="nav-item"><a href="#contatc" class="nav-link">Suporte</a></li>
                     </ul>
@@ -221,7 +221,7 @@
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

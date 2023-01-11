@@ -346,16 +346,43 @@ footer>.center {
     text-decoration: underline;
 }
 
+/* ============================================================== Pag. Sobre ==================================================== */
+
+section .equipe {
+    padding: 40px 0;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+section .equipe-text h2 {
+    font-size: 54px;
+    font-weight: normal;
+    color: #202020;
+
+}
+
+section .equipe-text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #616060;
+}
+
+section .equipe-img img {
+    display: block;
+    width: 50%;
+    min-width: 100vh;
+    overflow: hidden;
+}
 
 /* ============ Resposivo ============== */
 
 @media screen and (max-width: 1024px) {
-    footer > .center {
+    footer>.center {
         width: 100%;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
-   
+
 }
 
 @media(max-width: 768px) {
