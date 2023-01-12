@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
@@ -31,10 +31,9 @@
                     <a class="nav-branding" href="#"><img src="img/logo.png" alt="logo"></a>
 
                     <ul class="nav-menu">
-                        <li class="nav-item"><a href="./index.php class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./index.php" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="./sobre.php" class="nav-link">Serviços</a></li>
-                        <li class="nav-item"><a href="#contatc" class="nav-link">Contatos</a></li>
-                        <li class="nav-item"><a href="#contatc" class="nav-link">Suporte</a></li>
+                        <li class="nav-item"><a href="./contact.php" class="nav-link">Contatos</a></li>
                     </ul>
 
                     <div class="hamburger">
@@ -63,7 +62,7 @@
     <!--------------- Slider -------------->
 
     <div class="button">
-        <i id="btn-icon" class='bx bxs-chevron-down'></i>
+       <a href="#footer"><i id="btn-icon" class='bx bxs-chevron-down'></i></a> 
     </div>
 
     <section class="slider-clientes">
@@ -187,12 +186,12 @@
 
     <!--------------- Footer -------------->
 
-    <footer>
+    <footer id="footer">
         <section class="metodologia">
             <div class="center">
                 <h2>Conheça nossa Metodologia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae minus accusantium deserunt dignissimos dolorum itaque necessitatibus labore consequuntur incidunt expedita laboriosam quisquam illo laborum eaque quia molestiae, eius inventore?</p>
-                <a href="#">Vamos conversar</a>
+                <a href="./contact.php">Vamos conversar</a>
             </div>
         </section>
 
@@ -220,7 +219,8 @@
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHKBUoT_qH4"></script>
+    <script src="js/map.js"></script>
     <script src="js/script.js"></script>
 
 </body>

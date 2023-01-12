@@ -151,6 +151,7 @@ span:hover {
     border-radius: 5rem;
     background-color: #ffffff;
     box-shadow: 0 10px 25px rgba(38, 15, 139, 0.11);
+    cursor: pointer;
 }
 
 .button i {
@@ -158,6 +159,14 @@ span:hover {
     top: 20px;
     font-size: 30px;
     color: #1b49a5;
+}
+
+.button i:hover {
+    color: white;
+}
+
+.button:hover {
+    background-image: linear-gradient(114deg, #eeaf02, #f75b00);
 }
 
 /* ============ Services ============== */
@@ -348,31 +357,174 @@ footer>.center {
 
 /* ============================================================== Pag. Sobre ==================================================== */
 
-section .equipe {
+/* ------------ Home -------------- */
+
+.equipe-container {
+    height: 100vh;
     padding: 40px 0;
-    align-items: center;
-    margin-top: 10rem;
+    position: relative;
+    z-index: 1000;
 }
 
-section .equipe-text h2 {
-    font-size: 54px;
+.equipe-text h2 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 34px;
     font-weight: normal;
     color: #202020;
-
 }
 
-section .equipe-text p {
+.equipe-text p {
+    width: 60%;
     font-size: 15px;
     font-weight: 400;
     color: #616060;
 }
 
-section .equipe-img img {
+.equipe-img img {
     display: block;
-    width: 50%;
-    min-width: 100vh;
-    overflow: hidden;
+    max-width: 100%;
+    margin-top: 5rem;
 }
+
+/* ========== Slider Swiper ================= */
+
+.clientes {
+    background-image: linear-gradient(110deg, #2808b6, #00f9f7);
+    padding: 10rem 0;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    color: #000;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* ============================================================== Pag. Contact ==================================================== */
+
+/* ------------ Contact info -------------- */
+
+.contato-info {
+    padding: 30px 0;
+}
+
+.contato-info h2 {
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.contato-info ul li {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-right: 30px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(38, 15, 139, 0.11);
+    border-radius: 10px;
+}
+
+.contato-info a {
+    margin: 30px;
+}
+
+.contato-info li:hover {
+    transition: all .45s ease;
+    transform: translateY(-8px);
+}
+
+.mapa-container{
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+    margin-top: 5rem;
+   
+}
+
+
+#mapa{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    box-shadow: 0 10px 25px rgba(38, 15, 139, 0.295);
+    
+}
+
+.contato-form{
+    padding: 0 30px; 
+    
+}
+.contato-form input[type=text]{
+ width: 100%;
+ height: 46px;
+ padding-left: 8px;
+ font-size: 16px;
+ margin-bottom: 15px;
+ border: 1px solid #20202021;
+ box-shadow: 0 10px 25px rgba(38, 15, 139, 0.11);
+}
+
+.contato-form select {
+    width: 100%;
+    height: 48px;
+    padding-left: 8px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #20202021;
+    box-shadow: 0 10px 25px rgba(38, 15, 139, 0.11);
+}
+
+.contato-form textarea{
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    resize: none;
+    border: 1px solid #20202021;
+    box-shadow: 0 10px 25px rgba(38, 15, 139, 0.11);
+   }
+
+   .contato-form input[type=submit]{
+    float: right;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(114deg, #2808b6, #00f9f7);
+    cursor: pointer;
+    transition: all .55s ease;
+   }
+
+   .contato-form input[type=submit]:hover{
+    background-image: linear-gradient(114deg, #2b129b, #0ac4c4);
+   }
 
 /* ============ Resposivo ============== */
 
@@ -468,5 +620,19 @@ section .equipe-img img {
     .col-footer a {
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    /* pag sobre*/
+
+    .equipe-container {
+        height: 150vh;
+        max-width: 100%;
+        padding: 40px 0;
+        position: relative;
+
+    }
+
+    .contato-form{
+        margin-bottom: 20rem;
     }
 }
